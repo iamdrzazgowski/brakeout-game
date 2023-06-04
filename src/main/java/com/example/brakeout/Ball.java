@@ -7,10 +7,11 @@ import javafx.scene.paint.Color;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Ball extends GraphicsItem {
     private Point2D moveVector = new Point2D(1, -1).normalize();
-    private double velocity = 300;
+    private double velocity = 500;
     private Point2D lastPosition;
 
     public Ball() {
@@ -63,6 +64,12 @@ public class Ball extends GraphicsItem {
 
     public Point2D getBottomRight(){
         return new Point2D(x+width/2,y+height/2);
+    }
+
+
+    public void bounceFromPaddle(double hitPosition){
+
+
     }
 
 }
