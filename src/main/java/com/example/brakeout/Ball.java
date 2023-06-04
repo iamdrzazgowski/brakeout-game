@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Ball extends GraphicsItem {
     private Point2D moveVector = new Point2D(1, -1).normalize();
-    private double velocity = 700;
+    private double velocity = 300;
     private Point2D lastPosition;
 
     public Ball() {

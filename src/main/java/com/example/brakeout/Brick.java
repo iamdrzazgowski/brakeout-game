@@ -52,5 +52,6 @@ public class Brick extends GraphicsItem{
         } else {
             return CrushType.NoCrush;
         }
+
     }
 }
