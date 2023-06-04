@@ -66,10 +66,8 @@ public class Ball extends GraphicsItem {
         return new Point2D(x+width/2,y+height/2);
     }
 
-
     public void bounceFromPaddle(double hitPosition){
-
-
+        moveVector = new Point2D(moveVector.getX() * hitPosition, moveVector.getY());
     }
 
 }

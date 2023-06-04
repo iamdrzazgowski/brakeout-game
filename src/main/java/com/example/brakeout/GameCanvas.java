@@ -66,6 +66,12 @@ public class GameCanvas extends Canvas {
                 ball.bounceVertically();
             }
             if(shouldBallBounceFromPaddle()){
+                // Tutaj zrobić większy kont odbicia piłki na skrajach paletki
+                double proporcionalTouch = ball.getX() / paddle.getWidth();
+
+                if((ball.getX() > paddle.getX() && ball.getX() <= paddle.getX() + 30) || (ball.getX() <= paddle.getX() + paddle.getWidth() && ball.getX() >= paddle.getX() + paddle.getWidth() - 30)){
+                    ball.bounceFromPaddle(proporcionalTouch);
+                }
                 ball.bounceVertically();
             }
             draw();
