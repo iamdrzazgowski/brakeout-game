@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class Ball extends GraphicsItem {
     private Point2D moveVector = new Point2D(1, -1).normalize();
-    private double velocity = 500;
+    private double velocity = 1500;
     private Point2D lastPosition;
 
     public Ball() {
