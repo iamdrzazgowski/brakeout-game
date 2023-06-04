@@ -126,6 +126,6 @@ public class GameCanvas extends Canvas {
     }
 
     public boolean shouldBallBounceFromPaddle(){
-        return (ball.getLastPosition().getY() < paddle.getY() - paddle.getHeight()/2 && ball.getY() >= paddle.getY() - paddle.getHeight()/2 && ball.getX() >= paddle.getX() && ball.getX() <= paddle.getX() + paddle.getWidth());
+        return (ball.getLastPosition().getY() < paddle.getY() - paddle.getHeight() && ball.getY() >= paddle.getY() - paddle.getHeight() && ball.getX() >= paddle.getX() && ball.getX() <= paddle.getX() + paddle.getWidth());
     }
 }
