@@ -10,4 +10,4 @@ A simple **Breakout** game implemented in Java using standard libraries and Swin
 
 ## 📸 Screenshots
 
-![Gameplay Screenshot]([screenshot.png](https://github.com/iamdrzazgowski/brakeout-game/blob/master/images/brakeout-game.png))
+![Gameplay Screenshot](https://github.com/iamdrzazgowski/brakeout-game/blob/master/images/brakeout-game.png)
